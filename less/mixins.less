@@ -12,3 +12,17 @@
     flex-direction: @direction;
     flex-wrap: @wrap;
 }
+
+.animation(@nameanim, @1, @2) {
+    @keyframes @nameanim {
+        0%{
+            background-color: @1;
+        }
+        50% {
+            background-color: @2;
+        }
+        100% {
+            background-color: @1;
+        }
+    }
+}

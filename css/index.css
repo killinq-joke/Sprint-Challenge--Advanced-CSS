@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  animation: bgfade 5s infinite;
 }
 html,
 body {
@@ -160,15 +161,26 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@keyframes bgfade {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: turquoise;
+  }
+  100% {
+    background-color: orange;
+  }
+}
 nav {
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 10px;
-  background-color: #F6F6F6;
   font-family: #454A59;
-  border: 1px solid #F1F1F1;
+  border: 1px solid none;
+  animation: a 5s infinite;
 }
 nav h1 {
   font-size: 5rem;
@@ -183,6 +195,17 @@ nav a {
 }
 nav a:hover {
   color: #5c6c9b;
+}
+@keyframes a {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
 }
 footer {
   color: #22283B;
