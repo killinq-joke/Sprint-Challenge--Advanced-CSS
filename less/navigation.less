@@ -4,20 +4,26 @@ nav {
     align-items: center;
     flex-flow: column;
     padding: 10px;
+    background-color: @nav-bg;
+    font-family: @nav-font;
+    border: 1px solid @nav-border;
     
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         padding-bottom: 20px;
     }
 
     a {
         text-decoration: none;
-        color:black;
-        font-size: 1.6rem;
-        padding: 10px;
+        color:@header-font-color;
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 15px;
         
         &:hover {
-            color: red;
+           
+                color: lighten(@header-font-color, 30%);
+              
         }
     }
 }
