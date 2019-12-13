@@ -1,8 +1,6 @@
 // Navigation code here
 nav {
-    display:flex;
-    align-items: center;
-    flex-flow: column;
+    .flexbox(column, nowrap, center);
     padding: 10px;
     background-color: @nav-bg;
     font-family: @nav-font;
@@ -14,9 +12,7 @@ nav {
     }
 
     a {
-        text-decoration: none;
-        color:@header-font-color;
-        font-weight: bold;
+        .button-mixin(@header-font-color, bold);
         font-size: 2rem;
         padding: 15px;
         

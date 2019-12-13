@@ -58,17 +58,18 @@
       }
 
       .btn {
+        .button-mixin(rgb(233, 233, 233), bold);
        align-self: flex-start;
        background-color: @header-font-color;
        padding: 10px;
        border-radius: 5px;
        width: 30%;
        text-align: center;
-       color: white;
        font-size: 2rem;
 
        &:hover {
          background-color: lighten(@header-font-color, 10%);
+         color: white;
        }
       }
     }
