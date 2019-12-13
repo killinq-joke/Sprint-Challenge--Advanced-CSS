@@ -160,6 +160,25 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  padding: 10px;
+}
+nav h1 {
+  font-size: 4rem;
+  padding-bottom: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  padding: 10px;
+}
+nav a:hover {
+  color: red;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
