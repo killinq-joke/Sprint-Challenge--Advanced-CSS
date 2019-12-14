@@ -1,1 +1,27 @@
 // Navigation code here
+nav {
+    .flexbox(column, nowrap, center);
+    padding: 10px;
+    font-family: @nav-font;
+    border: 1px solid @nav-border;
+    animation: a 5s infinite;
+    
+    h1 {
+        font-size: 5rem;
+        padding-bottom: 20px;
+    }
+
+    a {
+        .button-mixin(@header-font-color, bold);
+        font-size: 2rem;
+        padding: 15px;
+        
+        &:hover {
+           
+                color: lighten(@header-font-color, 30%);
+              
+        }
+    }
+}
+
+.animation(a, red, blue);

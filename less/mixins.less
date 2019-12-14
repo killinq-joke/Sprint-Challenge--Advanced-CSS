@@ -1,1 +1,28 @@
 // Mixins Here
+
+.button-mixin(@color, @ft-weight) {
+    color:@color;
+    font-weight: @ft-weight;
+    text-decoration: none;
+}
+
+.flexbox(@direction, @wrap, @align) {
+    display:flex;
+    align-items: @align;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+}
+
+.animation(@nameanim, @1, @2) {
+    @keyframes @nameanim {
+        0%{
+            background-color: @1;
+        }
+        50% {
+            background-color: @2;
+        }
+        100% {
+            background-color: @1;
+        }
+    }
+}
